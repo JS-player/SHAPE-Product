@@ -120,7 +120,7 @@ position: relative;
 
 }
 .special-offer span {
-    letter-spacing: 1px;
+    letter-spacing: 0.5px !important;
     display: block;
     font-size: 16px;
     color: white;
@@ -162,7 +162,7 @@ text-align: center;
 }
 .feature-card .text p {
     font-size: 14px;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px !important;
 }
 .feature-card img {
     width: 50px;
