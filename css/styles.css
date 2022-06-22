@@ -17,6 +17,7 @@ html {
 body {
     font-family: Myriad-arabic-light;
     scroll-behavior: smooth;
+    letter-spacing: 1.1px !important;
 }
 ul {
     list-style: none;
@@ -53,12 +54,16 @@ position: relative;
     letter-spacing: 3px;
     font-size: 40px;
 }
+.main .description p span{
+    color: #fb2c2c;
+    letter-spacing: 1.1px;
+}
 .main .description p{
 /* padding-bottom: 10px; */
     font-size: 20px;
     line-height: 2;
     font-weight: 600;
-    letter-spacing: 1.8px;
+    letter-spacing: 1.1px !important;
 }
 .main .logo{
     padding-top: 25px;
@@ -66,20 +71,24 @@ position: relative;
     left: 50%;
     transform: translateX(-50%);
     bottom: -43px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .main .logo img{
         width: 262px;
 }
 .main .logo img:nth-child(2){
     position: absolute;
-    bottom: 10px;
-    width: 200px;
+    bottom: 5px;
+    width: 27vw;
     height: 30px;
     opacity: 20%;
-    right: -130px;
-    transform: rotate(-10deg);
+    right: -50px;
+    transform: rotate(355deg);
 }
+@media (min-width:600px){
+    .main .logo img:nth-child(2){
+        width: 120px;
+}}
 .imfooter{
     height: 12vh;
     padding-bottom: 20px;
@@ -122,6 +131,7 @@ position: relative;
 .features{
     width: 100%;
     background-image: url(../images/green-slate.jpg);
+    background-size: cover;
     display: flex;
     justify-content: space-between;
     padding: 50px 20px;
@@ -143,6 +153,7 @@ position: relative;
 }
 .feature-card .text{
 text-align: center;
+    color: #585656;
 }
 .feature-card .text h4 {
     font-size: 18px;
@@ -169,6 +180,7 @@ text-align: center;
   .feature-card .text h4 {
     font-size: 16px;
     margin-bottom: 4px;
+    letter-spacing: 0px !important;
 }  
 .feature-card .text p {
     font-size: 12px;
@@ -189,7 +201,7 @@ text-align: center;
     padding: 10px 5px;
     } */
   .feature-card .text h4 {
-font-size: 19px;
+font-size: 18px;
     margin-bottom: 2px;
 }  
 .feature-card .text p {
@@ -207,11 +219,12 @@ font-size: 19px;
     padding: 50px 10px;
     }
     .feature-card {
-    padding: 10px 5px;
+    padding: 5px 5px;
     }
 .feature-card .text h4 {
-    font-size: 19px;
+    font-size: 18px;
     margin-bottom: 2px;
+    letter-spacing: 0px !important;
 }
 .feature-card .text p {
     font-size: 12px;
@@ -249,17 +262,17 @@ font-size: 19px;
     padding: 50px 10px;
     }
     .feature-card {
-    padding: 10px 7px;
+    padding: 8px 5px;
     }
   .feature-card .text h4 {
-    font-size: 4.5vw;
+    font-size: 4vw;
     margin-bottom: 2px;
 }  
 .feature-card .text p {
-    font-size: 10px;
+    font-size: 9px;
 } 
 .feature-card img {
-    width: 30px;
+    width: 25px;
    margin-bottom: 5px;
 }
 
@@ -287,7 +300,7 @@ font-size: 19px;
 }
 .heading h1::before {
     content: "";
-    background-color: red;
+    background-color: #d12c2c;
     position: absolute;
     width: 50px;
     height: 5px;
@@ -303,7 +316,7 @@ font-size: 19px;
     bottom: 15px;
     right: -10px;
     transform: translate(100%, -50%);
-    background-color: red
+    background-color: #d12c2c;
 }
 .info .desc {
     width: 100%;
@@ -333,13 +346,13 @@ font-size: 19px;
     overflow: hidden;
     position: relative;
 }
-.desc .box:nth-child(4) .img-container{
+/* .desc .box:nth-child(4) .img-container{
     padding: 10px 10px 0px 10px;
-}
+} */
 .desc .box img{
     border: 3px solid white !important;
     border-block: 1px;
-    height: 30vw;
+    height: 26vw;
     max-width: 100%;
     
 }
@@ -348,8 +361,7 @@ font-size: 19px;
     color: white;
     text-align: center;
     font-size: 4.2vw;
-    line-height: 1.2;
-    word-spacing: 2px;
+    word-spacing: 1px;
     align-self: center;
     justify-self: end;
 }
@@ -522,6 +534,7 @@ right: 10px;
 /* ========================================================================================= */
 .price{
     position: relative;
+    background-size: cover;
     justify-content: space-between;
     padding: 50px 10px;
     display: flex;
@@ -539,6 +552,7 @@ right: 10px;
 .price .ptxt{
     color: white;
     padding-right: 20px;
+    letter-spacing: 1px!important;
 }
 .price .ptxt h2{
     font-size: 45px;
@@ -609,12 +623,15 @@ right: 10px;
 }
 .return{
 background-color:#e7e7e7;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
 }
 .return h1:nth-child(1){
     padding-top: 30px;
+    overflow: hidden;
+    white-space: nowrap;
 }
 .return h1{
+    letter-spacing: 1px !important;
     font-size: 9vw;
     position: relative;
     margin: 0;
@@ -656,7 +673,7 @@ letter-spacing: 1.5px;
 }
 @media (max-width: 500px) {
 .return h1{
-        font-size: 9vw;
+        font-size: 8.8vw;
 }
 }
 @media (min-width: 700px) {
@@ -669,6 +686,7 @@ font-size: 35px;
 }
 /* ========================================================================= */
 .send-us{
+    letter-spacing: 1.1px;
     max-width: 100%;
     background-color: white;
     padding: 15px;
@@ -681,6 +699,7 @@ font-size: 35px;
            font-weight: 700;
 }
 .send-us p:nth-child(1){
+    font-size: 22px;
 
 }
 form{
@@ -731,7 +750,7 @@ form .mainInput:focus {
     color: #fff;
 }
 .footer{
-        margin-top: 20px;
+        margin-top: 0px;
 }
 .sfooter{
     display: flex;
@@ -762,10 +781,14 @@ font-size: 12px;
         width: 350px;
     }
 .main .description p {
-    font-size: 3.6vh;
+    font-size: 3.5vh;
     line-height: 1.03;
     letter-spacing: 1.5px;
-    padding-bottom: 8px;
+    padding-bottom: 15px;
+}
+.main .description p:nth-child(1){
+    font-size: 29px;
+    padding-bottom: 10px;
 }
     .main .content h1 {
     font-size: 35px;
@@ -784,6 +807,7 @@ font-size: 12px;
     .container {
         width: 390px;
     }
+
 .main .description p {
     font-size: 3.62vh;
     letter-spacing: 1.5px;
@@ -791,6 +815,10 @@ font-size: 12px;
     padding-bottom: 3px;
     line-height: 1.2;
     font-weight: 600;
+}
+.main .description p:nth-child(1){
+    font-size: 32px;
+    letter-spacing: 0px !important;
 }
 
 }
@@ -804,16 +832,19 @@ font-size: 12px;
     font-size: 26px;
     letter-spacing: 1.1px;
     word-spacing: 6px;
-    line-height: 1.3;
+    line-height: 1.1;
     }
 }
 @media (min-width: 500px) and (min-height:650px){
+    .main .description p:nth-child(1){
+    font-size: 4.9vh;
+    }
     .container {
         width: 480px;
     }
 .main .description p {
-    font-size: 4.13vh;
-    letter-spacing: 1.2px;
+    font-size: 4.1vh;
+    letter-spacing: 1.1px;
     word-spacing: 6px;
 }
 }
@@ -824,7 +855,7 @@ font-size: 12px;
         width: 585px;
     }
 .main .description p {
-    font-size: 4.6vh;
+    font-size: 4.5vh;
     line-height: 1.3;
     font-weight: 600;
     word-spacing: 5px;
@@ -847,7 +878,15 @@ font-size: 12px;
         width: 262px;
 }
 }
+@media (min-width: 600px) and (min-height:650px){
+    .main .description p:nth-child(1){
+    font-size: 5.1vh;
+    }
 
+.main .description p {
+    letter-spacing: 1.1px;
+}
+}
 /* Small Screens */
 
 @media (min-width: 768px) {
@@ -893,5 +932,8 @@ font-size: 12px;
 .main .description p {
     font-size: 5vh;
 
+}
+.description p:nth-child(1) {
+    font-size: 7vh !important;
 }
 }
