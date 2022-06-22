@@ -329,9 +329,12 @@ font-size: 19px;
     transform: scale(1.05);
 }
 .img-container{
-       padding: 10px;
+    padding: 10px;
     overflow: hidden;
     position: relative;
+}
+.desc .box:nth-child(4) .img-container{
+    padding: 10px 10px 0px 10px;
 }
 .desc .box img{
     border: 3px solid white !important;
