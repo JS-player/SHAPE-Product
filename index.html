@@ -12,21 +12,18 @@
     <style>
         @font-face {
             font-family: "Myriad-arabic";
-            src: url("./fonts/Myriad-Arabic-bold.otf");
+            src: url("./fonts/Myriad-arabic-light.ttf");
         }
 
         @font-face {
             font-family: "Myriad-arabic-light";
-            src: url("./fonts/Myriad-arabic-light.otf");
+            src: url("./fonts/Myriad-Arabic-bold.ttf");
         }
 
         .body {
             font-family: "Myriad-arabic";
         }
     </style>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500&display=swap" rel="stylesheet">
     <title>Shape</title>
 </head>
 
@@ -52,8 +49,8 @@
     </div>
     <div class="imfooter"></div>
     <div class="container">
-        <div class="special-offer">
-            <button href="#order">أطلب الان</button>
+        <div class="special-offer" onclick="window.location.href='#order'">
+            <button>أطلب الان</button>
             <span>خصم 30% لفترة محدوده</span>
         </div>
     </div>
@@ -177,18 +174,38 @@
         </div>
     </div>
     <div class="return">
-        <div id="order" class="container">
-            <h1>شحن مجاني لجميع المحافظات<br>الدفع عند الاستلام</h1>
+        <div id="order" class="">
+            <h1>شحن مجاني لجميع المحافظات</h1>
+            <h1>الدفع عند الاستلام</h1>
             <div class="return-box">
                 <h3>ضمان استرجاع خلال 14 يوم في حالة عدم رضاك عن المنتج</h3>
             </div>
-            <div class="send-us">
-                <form method="POST" action="https://api.sheetmonkey.io/form/wpJix92ubQ4ssrcM12mhgQ">
-                    <input class="mainInput" type="text" name="Name" placeholder="الاسم" required>
-                    <input class="mainInput" type="number" name="Number" placeholder="رقم الموبايل" required>
-                    <textarea name="Address" class="mainInput" placeholder="العنوان"></textarea>
-                    <input type="submit" value="اطلب الان ">
-                </form>
+            <div class="container">
+                <div class="send-us">
+                    <p>سجل بياناتك الان</p>
+                    <p>قبل شحن المنتج سوف نتواصل معك بكل التفاصيل</p>
+                    <form method="POST" action="https://api.sheetmonkey.io/form/wpJix92ubQ4ssrcM12mhgQ">
+                        <input class="mainInput" type="text" name="Name" placeholder="الاسم" required>
+                        <input class="mainInput" type="tel" name="Number" placeholder="الهاتف" required>
+                        <input type="submit" value=">> اطلب الان <<">
+                    </form>
+                    <div class="sfooter">
+                        <div class="sbox">
+                            <div class="stxt">
+                                <h4>تسجيل الصحة</h4>
+                                <p>مسجل ومصرح بوزارة الصحة</p>
+                            </div>
+                            <img src="./images/s2.png" alt="">
+                        </div>
+                        <div class="sbox">
+                            <div class="stxt">
+                                <h4>ضمان حقيقي</h4>
+                                <p>حماية وامان 100%</p>
+                            </div>
+                            <img src="./images/s1.png" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
