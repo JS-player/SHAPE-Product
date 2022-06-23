@@ -58,6 +58,7 @@ position: relative;
     letter-spacing: 1.1px;
 }
 .main .description p{
+    /* white-space: break-spaces; */
 /* padding-bottom: 10px; */
     font-size: 20px;
     line-height: 2;
@@ -111,6 +112,7 @@ position: relative;
 }
 
 .special-offer button{
+    font-weight: bold;
     background: none;
     border: none;
     color: white;
@@ -358,6 +360,7 @@ font-size: 18px;
     
 }
 .desc .box p {
+    font-weight: bold;
     padding: 0 5px;
     color: white;
     text-align: center;
@@ -451,7 +454,7 @@ right: 10px;
     background-color: #fb2c2c;
     color: white;
     font-size: 22px;
-    font-weight: 500;
+    font-weight: bold;
     line-height: 2;
 }
 @media (min-width: 800px) {
@@ -586,6 +589,9 @@ right: 10px;
     .price .ptxt h1{
     font-size: 300px;
 }
+.rtxt p {
+    font-size: 3vw;
+}
 }
 .price .ptxt p{
     font-size: 35px;
@@ -598,12 +604,16 @@ right: 10px;
 }
 
 @media (min-width: 810px) {
-.price img {
-    width: 20%;
+    .rtxt p{
+    font-size: 28px !important;
 }
-    .price {
-    justify-content: space-around;
-    }
+.price img {
+    width: 190px;
+    margin-right: 50px;
+}
+.price {
+    justify-content: center;
+}
     .price h2::after{
         width: 70%
     }
@@ -616,7 +626,7 @@ right: 10px;
 }
 @media (min-width: 1000px) {
     .price {
-    justify-content: space-evenly;
+    justify-content: center;
     }
     .price img {
     width: 15%;
@@ -776,7 +786,10 @@ form span{
     padding: 5px 5px;
     border-radius: 0 0 5px 5px;
 }
-
+form input,
+input::placeholder {
+    font-size: 22px;
+}
  /* form input[type="submit"]:hover {
     background-color: #BF1363;
     color: #fff;
@@ -843,12 +856,12 @@ font-size: 12px;
     }
 
 .main .description p {
-    font-size: 3.62vh;
-    letter-spacing: 1.5px;
+    /* font-size: 3.62vh; */
+    /* letter-spacing: 1.5px; */
     word-spacing: 5px;
     padding-bottom: 3px;
-    line-height: 1.2;
-    font-weight: 100 !important;
+    line-height: 1.3;
+    font-weight: bold !important;
 }
 .main .description p:nth-child(1){
     font-size: 32px;
@@ -978,8 +991,11 @@ font-size: 12px;
     letter-spacing: 0px !important;
     padding-bottom: 20px;
 }
+.main p:nth-child(2){
+    white-space: break-spaces;
+}
 .main .description p {
-    font-size: 3.9vh;
+    /* font-size: 3.9vh; */
     padding-bottom: 10px;
 }
 .send-us p {
@@ -1012,10 +1028,29 @@ padding-right: 25px;
 @media (min-height:800px) and (max-width:390px) {
 .main .description p:not(.main .description p:nth-child(1)) {
     margin-bottom: 10px;
-    font-weight: 100;
+    font-weight: bold;
 }
 .main .description p:nth-child(1) {
     padding-bottom: 30px;
     font-weight: bold;
+}
+}
+
+.send-us p:nth-child(1) {
+    font-size: 38px;
+}
+@media (min-width: 1100px){
+.main .content h1 {
+    letter-spacing: 3px;
+    margin: 0.4em 0;
+}
+.main .description p {
+    padding-bottom: 10px !important;
+}
+}
+@media (min-width: 900px){
+.price img {
+    width: 190px;
+    margin-right: 50px;
 }
 }

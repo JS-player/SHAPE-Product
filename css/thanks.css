@@ -1,0 +1,16 @@
+body {
+    background: url('../images/green-slate.jpg');
+    color: white;
+    background-size: cover;
+}
+.main-content__body {
+    font-family: ui-serif;
+    font-weight: bold;
+    font-size: 32;
+    letter-spacing: 0.5px;
+}
+.main-content__checkmark {
+    font-size: 6rem;
+    line-height: 1;
+    color: #24b6b6;
+}
