@@ -64,9 +64,8 @@ position: relative;
 .main .description{
     font-family: gess-bold;
 }
-.main .description p span{
-    color: #fb2c2c;
-    letter-spacing: 1.1px;
+.main .description p span {
+    color: #f10f4b;
 }
 .main .description p{
     /* white-space: break-spaces; */
