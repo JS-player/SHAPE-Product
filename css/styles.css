@@ -135,7 +135,7 @@ position: relative;
 
 }
 .special-offer span {
-    letter-spacing: 0.5px !important;
+    letter-spacing: 0px !important;
     display: block;
     font-size: 16px;
     color: white;
@@ -177,7 +177,7 @@ text-align: center;
 }
 .feature-card .text p {
     font-size: 14px;
-    letter-spacing: 0.5px !important;
+    letter-spacing: 0px !important;
 }
 .feature-card img {
     width: 50px;
@@ -803,7 +803,7 @@ form .mainInput:focus {
 form span{
     position: relative;
     top: -1px;
-    letter-spacing: 0.5px !important;
+    letter-spacing: 0px !important;
     display: block;
     font-size: 14px;
     color: white;
