@@ -1161,6 +1161,7 @@ padding-right: 15px;
 .block1-head2:before {
     content: "";
     background: url(../images/ch1.png) no-repeat center center;
+        background-size: contain;
     width: 40px;
     position: absolute;
     right: 0;
@@ -1207,13 +1208,13 @@ width: 0;
     }
  }
  @media (max-width: 767px) {
-    .block1-head2:before {
-        width: 29px;
-        height: 30px;
-        background-size: 48%;
-        top: 0px;
-        right: 0;
-    }
+.block1-head2:before {
+    width: 30px;
+    height: 30px;
+    background-size: 75%;
+    top: 0px;
+    right: 0;
+}
     .block1-head2 {
         font-size: 5vw;
         margin: 2vw auto;
@@ -1285,10 +1286,11 @@ word-spacing: 5px;
     .Sh{
         /* width: 70%; */
     }
-        .block1-head2:before {
+.block1-head2:before {
     transform: scale(0.8);
     top: -2px;
-    }
+    right: -5px;
+}
 .block1-head2 {
     font-size: 27px;
     text-align: right;
